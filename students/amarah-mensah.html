@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <button class="back-btn" onclick="window.location.href='../index.html'">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    Back
+  </button>
+  <span class="nav-breadcrumb">/ <span>Students</span> / Amara Mensah</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg-circle"></div>
+  <div class="hero-inner">
+    <div class="avatar-wrap">
+      <div class="avatar">AM</div>
+      <div class="status-dot" title="Open to opportunities"></div>
+    </div>
+    <div class="hero-info">
+      <p class="hero-tag">Engineering · Class of 2025</p>
+      <h1 class="hero-name">Amara Mensah</h1>
+      <p class="hero-sub">Full-Stack Developer &amp; Open-Source Contributor</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Accra, Ghana
+        </span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.18a16 16 0 006.29 6.29l1.5-1.31a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15.92z"/></svg>
+          +233 55 000 1234
+        </span>
+        <span class="hero-meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          amara@university.edu
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-tabs">
+    <button class="tab active" onclick="showTab('about', this)">About</button>
+    <button class="tab" onclick="showTab('skills', this)">Skills</button>
+    <button class="tab" onclick="showTab('projects', this)">Projects</button>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="body-wrap">
+
+  <!-- LEFT CONTENT -->
+  <div>
+
+    <!-- ABOUT -->
+    <section id="tab-about">
+      <p class="section-label">Bio</p>
+      <div class="bio-text">
+        <p>I'm a final-year Computer Engineering student at Kwame Nkrumah University of Science and Technology, driven by a deep passion for building scalable software and contributing to open-source communities. My journey started with breaking apart old computers in my dad's shop — today I design the systems that run inside them.</p>
+        <p>I specialize in full-stack web development with a focus on performance and developer experience. I've contributed to several open-source projects with over 2,000 combined GitHub stars, and I currently lead my university's ACM chapter, organizing workshops and hackathons for 300+ members.</p>
+        <p>When I'm not coding I'm either deep in a debugging rabbit hole, mentoring junior students, or arguing about programming language design over jollof rice.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="tab-skills" style="display:none">
+      <p class="section-label">Technical Skills</p>
+      <div class="skills-grid">
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="95"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">JavaScript / TypeScript</span><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="90"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">React &amp; Next.js</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="88"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Rust</span><span class="skill-pct">72%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="72"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">PostgreSQL / Redis</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="80"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Docker / Kubernetes</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="75"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">AWS / GCP</span><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="70"></div></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="tab-projects" style="display:none">
+      <p class="section-label">Featured Projects</p>
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="project-icon">⚡</div>
+          <div class="project-info">
+            <p class="project-title">FluxDB</p>
+            <p class="project-desc">A lightweight, embedded key-value store written in Rust with a focus on sub-millisecond reads and crash-safe writes.</p>
+            <div class="project-tags"><span class="ptag">Rust</span><span class="ptag">Systems</span><span class="ptag">Open Source</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🌍</div>
+          <div class="project-info">
+            <p class="project-title">AgroSense Dashboard</p>
+            <p class="project-desc">IoT sensor analytics platform for small-scale farmers across West Africa, built with Next.js and real-time WebSocket streams.</p>
+            <div class="project-tags"><span class="ptag">Next.js</span><span class="ptag">IoT</span><span class="ptag">Python</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🤖</div>
+          <div class="project-info">
+            <p class="project-title">CodeMentor CLI</p>
+            <p class="project-desc">An AI-powered command-line tool that reviews pull requests and suggests improvements based on style guides and best practices.</p>
+            <div class="project-tags"><span class="ptag">TypeScript</span><span class="ptag">LLM</span><span class="ptag">CLI</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <p class="sidebar-card-title">Stats</p>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-num">3.9</div><div class="stat-label">GPA</div></div>
+        <div class="stat-box"><div class="stat-num">12</div><div class="stat-label">Projects</div></div>
+        <div class="stat-box"><div class="stat-num">2k+</div><div class="stat-label">GitHub Stars</div></div>
+        <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Awards</div></div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <p class="sidebar-card-title">Links</p>
+      <div class="links-list">
+        <a class="link-item" href="https://github.com/amaramensah" target="_blank">
+          <div class="link-icon gh"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg></div>
+          <div class="link-text"><div class="link-label">GitHub</div><div class="link-url">github.com/amaramensah</div></div>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a class="link-item" href="https://linkedin.com/in/amara-mensah" target="_blank">
+          <div class="link-icon li"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <div class="link-text"><div class="link-label">LinkedIn</div><div class="link-url">linkedin.com/in/amara-mensah</div></div>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a class="link-item" href="https://twitter.com/amara_builds" target="_blank">
+          <div class="link-icon tw"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+          <div class="link-text"><div class="link-label">X / Twitter</div><div class="link-url">@amara_builds</div></div>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a class="link-item" href="https://facebook.com/amara.mensah" target="_blank">
+          <div class="link-icon fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></div>
+          <div class="link-text"><div class="link-label">Facebook</div><div class="link-url">fb.com/amara.mensah</div></div>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a class="link-item" href="https://amaramensah.dev" target="_blank">
+          <div class="link-icon web"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <div class="link-text"><div class="link-label">Portfolio</div><div class="link-url">amaramensah.dev</div></div>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <p class="sidebar-card-title">Interests</p>
+      <div class="interests-wrap">
+        <span class="interest-tag">Systems Programming</span>
+        <span class="interest-tag">Open Source</span>
+        <span class="interest-tag">AI/ML</span>
+        <span class="interest-tag">AgriTech</span>
+        <span class="interest-tag">Distributed Systems</span>
+        <span class="interest-tag">Mentorship</span>
+        <span class="interest-tag">Hackathons</span>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<script>
+  function showTab(name, btn) {
+    ['about','skills','projects'].forEach(t => {
+      document.getElementById('tab-' + t).style.display = t === name ? 'block' : 'none';
+    });
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (name === 'skills') animateBars();
+  }
+
+  function animateBars() {
+    setTimeout(() => {
+      document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+        bar.style.width = bar.dataset.w + '%';
+      });
+    }, 80);
+  }
+</script>
+</body>
+</html>

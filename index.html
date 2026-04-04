@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="src/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Directory</title>
+  <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
 
-<header>
-  <p class="site-label">Class of 2025</p>
-  <h1>Student <em>Directory</em></h1>
+  <header>
+    <h1>🎓 Student Directory</h1>
+    <input type="text" id="search" placeholder="Search student..." />
+  </header>
+
+  <main>
+    <div id="student-list" class="grid"></div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
   <p class="subtitle">Meet the brilliant minds shaping tomorrow</p>
 
   <div class="search-wrap">

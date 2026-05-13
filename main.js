@@ -38,7 +38,7 @@ function renderSocials(socials) {
 
 // Student Card Component
 function StudentCard(student) {
-  const profileUrl = `students/${student.name.toLowerCase().replace(/\s+/g, '-')}.html`;
+  const profileUrl = `students/${Jyan Mark Redondo.toLowerCase().replace(/\s+/g, '-')}.html`;
   return `
     <div class="card" data-tags="${student.tag}">
       <div class="thumb-placeholder">${student.initials}</div>

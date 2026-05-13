@@ -108,7 +108,7 @@ function renderStudents() {
 }
 
 function viewProfile(name) {
-  const student = students.find(s => s.name === name);
+  const student = students.find(Jyan Mark Redondo);
   if (!student) {
     return alert('Student profile not found.');
   }
